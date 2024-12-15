@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editar Emprestimo</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stylecadastra.css" />
+  </head>
+  <body>
+    <div class="principal">
+      <h2>FORMULÁRIO PARA <span>CADASTROS</span></h2>
+
+      <div class="container">
+        <div class="content">
+          <h3>BEM-VINDO</h3>
+          <img
+            width="200"
+            height="200"
+            src="/frontend/livros/open-doodles-reading-side.gif"
+            alt="external-book-online-learning-flatart-icons-lineal-color-flatarticons-1"
+          />
+        </div>
+        <div>
+          <form id="formEdicao" action="">
+            <h1>Olá!</h1>
+            <p id="subtitle">Editar Emprestimo</p>
+            <div class="input-container">
+              <img
+                width="24"
+                height="24"
+                src="https://img.icons8.com/material/24/0a6575/document-header.png"
+                alt="document-header"
+              />
+              <label class="form-label" for="user"></label>
+              <input
+                class="form-control"
+                type="text"
+                name="username"
+                autocomplete="username"
+                id="nome"
+                placeholder="Nome"
+              />
+            </div>
+            <div class="input-container">
+              <img
+                width="48"
+                height="48"
+                src="https://img.icons8.com/sf-regular-filled/48/0a6575/bookmark.png"
+                alt="bookmark"
+              />
+              <label for="password" class="form-label"></label>
+              <input
+                class="form-control"
+                type="text"
+                name="autor"
+                id="tituloLivro"
+                placeholder="titulo"
+              />
+            </div>
+
+            <div class="input-container">
+              <label for="status">Data Emprestimo:</label>
+
+              <input
+                id="dataEmprestimo"
+                type="date"
+                placeholder="Data Emprestimo"
+              />
+            </div>
+
+            <div class="input-container">
+              <label for="status">Data Devolução:</label>
+
+              <input
+                id="dataDevolucao"
+                type="date"
+                placeholder="Data Devolução"
+              />
+            </div>
+
+            <button type="submit" class="submit-button">
+              Salvar Alterações
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="/frontend/emprestimo/scripts-empre.js"></script>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const emprestimoId = urlParams.get("id");
+      carregarDadosEmprestimos("formEdicao", emprestimoId);
+    </script>
+  </body>
+</html>

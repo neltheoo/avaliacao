@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script> -->
+    <link rel="stylesheet" href="style-us.css" />
+    <link rel="stylesheet" href="stylecadastrar.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="background-color: #524f4f">
+    <div class="container">
+      <h1 id="tit">Biblioteca Simplificada</h1>
+      <div class="box">
+        <h2>
+          <a id="a" href="/frontend/crud-principal.html">
+            <img
+              class="lista-usuarios"
+              width="32"
+              height="32"
+              src="https://img.icons8.com/windows/32/0a6575/user-menu-male--v1.png"
+              alt="user-menu-male--v1"
+            />
+            Biblioteca
+          </a>
+        </h2>
+        <div class="list-content">
+          <a href="#" id="click1" class="button">
+            <img
+              width="32"
+              height="32"
+              src="https://img.icons8.com/windows/32/FFFFFF/add-user-group-man-man--v1.png"
+              alt="add-user-group-man-man--v1"
+            />Novo Usuário
+          </a>
+
+          <a href="#" class="button" id="click"
+            ><img
+              width="32"
+              height="32"
+              src="https://img.icons8.com/windows/32/FFFFFF/call-to-action.png"
+              alt="call-to-action"
+            />Lista Usuários</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- inicio a tabela -->
+    <div class="table-container" id="tabelaUsuarios">
+      <table>
+        <thead>
+          <tr>
+          
+
+            <th>Nome</th>
+            <th>Email</th>
+            <th>telefone</th>
+            <th>Status</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <!-- cadastrar usuario -->
+    <div class="principal" id="principal">
+      <h2 id="h2">FORMULÁRIO PARA <span>CADASTROS</span></h2>
+
+      <div class="container1">
+        <div class="content">
+          <h3>BEM-VINDO</h3>
+          <p class="paragraf">
+            Lorem ipsum dolor sit amet consectetur. Semper consequat sed id
+            turpis lectus vitae tellus. Velit nec nibh suspendisse magnis
+            eleifend lorem pellentesque lacus porttitor. Fames pulvinar pulvinar
+            pulvinar dolor aliquam. Amet imperdiet lectus diam risus ligula
+            felis pulvinar.
+          </p>
+        </div>
+        <div>
+          <form id="formCadastro" action="">
+            <h1>Olá!</h1>
+            <p id="subtitle">Cadastra um novo usuário.</p>
+            <div class="input-container">
+              <img
+                width="50"
+                height="50"
+                src="https://img.icons8.com/ios-filled/50/0a6575/user.png"
+                alt="user"
+              />
+              <label class="form-label" for="nome"></label>
+              <input
+                class="form-control"
+                type="text"
+                name="username"
+                autocomplete="username"
+                id="nome"
+                placeholder="Nome"
+              />
+            </div>
+            <div class="input-container">
+              <img
+                width="30"
+                height="30"
+                src="https://img.icons8.com/ios-glyphs/30/0a6575/new-post.png"
+                alt="new-post"
+              />
+              <label for="email" class="form-label"></label>
+              <input
+                class="form-control"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+              />
+            </div>
+
+            <div class="input-container">
+              <img
+                width="30"
+                height="30"
+                src="https://img.icons8.com/ios-glyphs/30/0a6575/phone--v1.png"
+                alt="phone--v1"
+              />
+              <label for="telefone"></label>
+              <input
+                type="text"
+                id="telefone"
+                name="phone"
+                placeholder="Telefone"
+              />
+            </div>
+
+            <div class="input-container">
+              <label for="status"> Status:</label>
+
+              <select id="status">
+                <option value="ativo">Ativo</option>
+                <option value="inativo">Inativo</option>
+              </select>
+            </div>
+
+            <button type="submit" class="submit-button">Cadastar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="/frontend/usuarios/scripts-usuarios.js"></script>
+    <script>
+      listarUsuarios("tabelaUsuarios");
+      cadastrarUsuario("formCadastro", "listar-usuario.html");
+    </script>
+    <script src="/frontend/usuarios/scripts-usuarios copy.js"></script>
+  </body>
+</html>

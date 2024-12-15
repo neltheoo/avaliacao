@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style-lista.css " />
+    <title>Listar Emprestimo</title>
+  </head>
+  <body>
+    <div class="table-container" id="tabelaEmprestimos">
+      <table>
+        <thead>
+          <tr>
+           
+
+            <th>Nome</th>
+            <th>Titulo</th>
+            <th>Data Emprestimo</th>
+            <th>Data Devolução</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <script src="/frontend/emprestimo/scripts-empre.js"></script>
+    <script>
+      listarEmprestimos("tabelaEmprestimos");
+    </script>
+  </body>
+</html>

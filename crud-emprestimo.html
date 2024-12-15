@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crud Emprestimos</title>
+    <!--  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script> -->
+    <link rel="stylesheet" href="style-empre.css" />
+    <link rel="stylesheet" href="stylecadastra copy.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="background-color: #524f4f">
+    <div class="container">
+      <h1 id="tit" >Biblioteca Simplificada</h1>
+      <div class="box">
+        <h2>
+          <a id="a" href="/frontend/crud-principal.html">
+            <img
+              class="lista-usuarios"
+              width="32"
+              height="32"
+              src="https://img.icons8.com/windows/32/0a6575/user-menu-male--v1.png"
+              alt="user-menu-male--v1"
+            />
+            Biblioteca
+          </a>
+        </h2>
+        <div class="list-content">
+          <a href="#" id="click1" class="button">
+            <img
+              width="32"
+              height="32"
+              src="https://img.icons8.com/windows/32/FFFFFF/add-user-group-man-man--v1.png"
+              alt="add-user-group-man-man--v1"
+            />Novo Emprestimo
+          </a>
+
+          <a href="#" id="click" class="button"
+            ><img
+              width="32"
+              height="32"
+              src="https://img.icons8.com/windows/32/FFFFFF/call-to-action.png"
+              alt="call-to-action"
+            />Listar Emprestimos
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- formulario -->
+    <div class="principal" id="principal">
+      <h2 id="h2">FORMULÁRIO PARA <span>CADASTROS</span></h2>
+
+      <div class="container1">
+        <div class="content">
+          <h3>BEM-VINDO</h3>
+          <img id="img"
+            width="200"
+            height="200"
+            src="/frontend/livros/open-doodles-reading-side.gif"
+            alt="external-book-online-learning-flatart-icons-lineal-color-flatarticons-1"
+          />
+        </div>
+        <div id="formEdicao">
+          <form action="">
+            <h1>Olá!</h1>
+            <p id="subtitle">Cadastrar um emprestimo</p>
+            <div class="input-container">
+              <img
+                width="24"
+                height="24"
+                src="https://img.icons8.com/material/24/0a6575/document-header.png"
+                alt="document-header"
+              />
+              <label class="form-label" for="user"></label>
+              <input
+                class="form-control"
+                type="text"
+                name="username"
+                autocomplete="username"
+                id="nome"
+                placeholder="Nome"
+              />
+            </div>
+            <div class="input-container">
+              <img 
+                width="48"
+                height="48"
+                src="https://img.icons8.com/sf-regular-filled/48/0a6575/bookmark.png"
+                alt="bookmark"
+              />
+              <label for="password" class="form-label"></label>
+              <input
+                class="form-control"
+                type="text"
+                name="autor"
+                id="tituloLivro"
+                placeholder="titulo"
+              />
+            </div>
+
+            <div class="input-container">
+              <label for="status">Data Emprestimo:</label>
+
+              <input
+                id="dataEmprestimo"
+                type="date"
+                placeholder="Data Emprestimo"
+              />
+            </div>
+
+            <div class="input-container">
+              <label for="status">Data Devolução:</label>
+
+              <input
+                id="dataDevolucao"
+                type="date"
+                placeholder="Data Devolução"
+              />
+            </div>
+
+            <button type="submit" class="submit-button">Cadastrar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- listar emprestimos -->
+    <div class="table-container" id="tabelaEmprestimos">
+      <table>
+        <thead>
+          <tr>
+          
+
+            <th>Nome</th>
+            <th>Titulo</th>
+            <th>Data Emprestimo</th>
+            <th>Data Devolução</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <script src="/frontend/emprestimo/scripts-empre.js"></script>
+    <script src="/frontend/emprestimo/scripts-empre copy.js"></script>
+    <script>
+      cadastrarEmprestimo("formEdicao", "listarEmprestimo.html");
+      listarEmprestimos("tabelaEmprestimos");
+    </script>
+  </body>
+</html>

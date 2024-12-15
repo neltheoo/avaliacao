@@ -1,0 +1,17 @@
+{
+  "name": "express-get-lista",
+  "version": "1.0.0",
+  "description": "Exemplo Básico de API, monstrando como receber uma lista de informações.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./index.js 127.0.0.1 3000"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7"
+  }
+}

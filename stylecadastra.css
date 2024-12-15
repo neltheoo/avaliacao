@@ -1,0 +1,146 @@
+/* reseta o meu css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Kanit", sans-serif;
+    max-width: 100vw;
+    min-height: auto;
+    background-color: #d6d6d6;
+  }
+  
+  .container {
+    display: flex;
+    width: 600px;
+    height: 450px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin: 2rem auto;
+    background-color: white;
+    background: linear-gradient(270deg, #fff 52.5%, #58e4fd 52.51%, #4db1fd 100%);
+  
+    border-radius: 24px;
+    gap: 20px;
+    padding: 1rem;
+  }
+  h2 {
+    text-align: center;
+    color: #856161;
+    margin: 1 em auto;
+  }
+  
+  .content {
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem;
+    color: rgb(2, 12, 65);
+  }
+  
+  h3 {
+    margin: 2rem;
+    color: rgb(2, 12, 65);
+  }
+  h1 {
+    text-align: center;
+    color: #0a6575;
+  }
+  
+  #subtitle {
+    color: #0a6575;
+    margin: 2px 3px 30px 5px;
+  }
+  
+  .paragraf {
+    font-size: 14px;
+  }
+  
+  .input-container {
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  .input-container img {
+    position: absolute;
+    left: 10px;
+    top: 20%;
+    margin-top: 2px;
+    color: #fff;
+    width: 18px;
+    height: 18px;
+    align-items: center;
+  }
+  
+  .input-container input {
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 4px 12px 0px #4db1fd;
+  
+    width: 250px;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    color: #0a6575;
+    padding: 20px 50px 20px 50px;
+    background-color: transparent;
+  }
+  
+  .submit-button {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(0, 151, 211);
+    border: none;
+    border-radius: 10px;
+    color: #000000;
+    font-weight: 500;
+    margin-top: 24px;
+    cursor: pointer;
+    outline: none;
+    font-size: 20px;
+  }
+  .submit-button:hover {
+    background-color: rgb(0, 100, 201);
+    color: #ffffff;
+  }
+  
+  .input-container input::placeholder {
+    color: #0a6575;
+  }
+  
+  .input-container label {
+    color: #0a6575;
+    font-size: 16px;
+  }
+  
+  select {
+    color: #0a6575;
+    border: none;
+    box-shadow: 0px 4px 12px 0px #4db1fd;
+    border-radius: 5px;
+  }
+  
+  span {
+    color: #0a6575;
+    font-style: italic;
+    font-family: "kanit", serif;
+    font-weight: 300;
+  }
+  
+  #form {
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  
